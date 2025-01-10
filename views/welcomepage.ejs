@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Next Step Workforce Solutions</title>
+  <style>
+    /* Base styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #f4f4f9;
+      color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Gradient Background for Navbar */
+    nav {
+      width: 100%;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #ff4081, #7e57c2); /* Gradient navbar */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      font-size: 1.1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff4081;
+    }
+
+    /* Main Container Styling */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      text-align: center;
+      color: #79076f;
+      margin-top: 100px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #c9a6ff;
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #b2b6c5;
+      margin-bottom: 2rem;
+      margin-left: 8%;
+      margin-right: 8%;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .header-text {
+      font-size: 1.5rem;
+      color: #d1c3ff;
+      margin: 1rem 0;
+      font-style: italic;
+    }
+
+    /* Cards Layout */
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: rgba(33, 31, 47, 0.85);
+      padding: 2rem;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 400px;
+      color: #eaeaf0;
+      text-align: left;
+      box-shadow: 0px 8px 16px rgba(127, 89, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0px 10px 20px rgba(167, 104, 216, 0.4);
+    }
+
+    .card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #c9a6ff;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #b2b6c5;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Button Styling */
+    .button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(135deg, #7f59ff, #a368d8);
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0px 4px 12px rgba(127, 89, 255, 0.4);
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 15px rgba(167, 104, 216, 0.6);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #9fa3b1;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    /* Keyframes for fadeIn */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <h1>Job Portal</h1>
+    <ul>
+      <li><a href="/login" class="button">Login</a></li>
+      <li><a href="/register" class="button">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Welcome to Work Sphere</h1>
+    
+    <!-- Footer -->
+    <div class="footer">
+      &copy; 2024 Next Step Workforce Solutions. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
